@@ -7,14 +7,14 @@ import { LocalStorage } from 'keys/local_storage';
 // Hooks
 import useResponseNotification from 'hooks/response_notification/default';
 // Services
-import { AuthenticateWidgetQuery } from 'views/pages/returning_ai_customer_club/default/subpages/common/services/query';
+import { AuthenticateWidgetQuery } from 'views/pages/returning_ai_customer_club/subpages/common/services/query';
 // Utility
 import { ReturningAiWidgetsTypes } from 'utility/enums';
 // Components
 import Loading from 'views/common/components/fallback_component/fetch/loading';
 import FetchError from 'views/common/components/fallback_component/fetch/error';
 // Styles
-import { commonStyle } from 'views/pages/returning_ai_customer_club/default/subpages/common/components/providers/widget';
+import { commonStyle } from 'views/pages/returning_ai_customer_club/subpages/common/components/providers/widget';
 
 interface AuthenticationProviderProps {
   widgetType: ReturningAiWidgetsTypes;

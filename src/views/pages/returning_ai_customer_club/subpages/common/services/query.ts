@@ -3,9 +3,9 @@ import { useQuery } from '@tanstack/react-query';
 // keys
 import { QueryKeys } from 'keys/query';
 // Services
-import { AuthenticateWidgetApi } from 'views/pages/returning_ai_customer_club/default/subpages/common/services/api';
+import { AuthenticateWidgetApi } from 'views/pages/returning_ai_customer_club/subpages/common/services/api';
 // Types
-import { AuthenticateWidgetParamsTypes } from 'views/pages/returning_ai_customer_club/default/subpages/common/services/types';
+import { AuthenticateWidgetParamsTypes } from 'views/pages/returning_ai_customer_club/subpages/common/services/types';
 
 export const AuthenticateWidgetQuery = (params: AuthenticateWidgetParamsTypes) =>
   useQuery({

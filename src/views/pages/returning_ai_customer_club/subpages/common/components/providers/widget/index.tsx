@@ -1,8 +1,8 @@
 // Utility
 import { ReturningAiWidgetsTypes } from 'utility/enums';
 // Components
-import AuthenticationProvider from 'views/pages/returning_ai_customer_club/default/subpages/common/components/providers/authentication';
-import IFrameProvider from 'views/pages/returning_ai_customer_club/default/subpages/common/components/providers/iframe';
+import AuthenticationProvider from 'views/pages/returning_ai_customer_club/subpages/common/components/providers/authentication';
+import IFrameProvider from 'views/pages/returning_ai_customer_club/subpages/common/components/providers/iframe';
 // Keys
 // import { LocalStorage } from 'keys/local_storage';
 

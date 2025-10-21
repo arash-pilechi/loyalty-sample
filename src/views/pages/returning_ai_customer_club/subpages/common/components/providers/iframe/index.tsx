@@ -8,7 +8,7 @@ import { ReturningAiWidgetsTypes } from 'utility/enums';
 // Components
 import Loading from 'views/common/components/fallback_component/fetch/loading';
 // Styles
-import { commonStyle } from 'views/pages/returning_ai_customer_club/default/subpages/common/components/providers/widget';
+import { commonStyle } from 'views/pages/returning_ai_customer_club/subpages/common/components/providers/widget';
 
 interface WidgetProviderProps {
   widgetType: ReturningAiWidgetsTypes;
