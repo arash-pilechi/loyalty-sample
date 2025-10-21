@@ -33,6 +33,20 @@ const IframeProvider = ({ widgetType }: WidgetProviderProps) => {
         return '';
     }
   }, [widgetType]);
+    const widgetId = useMemo(() => {
+        switch (widgetType) {
+            case ReturningAiWidgetsTypes.Channels:
+            case ReturningAiWidgetsTypes.Leaderboard:
+            case ReturningAiWidgetsTypes.Socials:
+            case ReturningAiWidgetsTypes.Store:
+            case ReturningAiWidgetsTypes.CurrencyOverview:
+                return process.env.REACT_APP_RETURNINGAI_WIDGET_ID;
+            case ReturningAiWidgetsTypes.Milestone:
+                return process.env.REACT_APP_RETURNINGAI_MILESTONE_WIDGET_ID;
+            default:
+                return '';
+        }
+    }, [widgetType]);
   return (
     <Box
       sx={{
@@ -63,7 +77,7 @@ const IframeProvider = ({ widgetType }: WidgetProviderProps) => {
       >
         <Box
           component="iframe"
-          src={`${externalRoutes.returningAi.widgets}/${widgetSrc}/${process.env.REACT_APP_RETURNINGAI_WIDGET_ID}`}
+          src={`${externalRoutes.returningAi.widgets}/${widgetSrc}/${widgetId}`}
           id="returningAiWidgetIframe"
           frameBorder="0"
           width="100%"
